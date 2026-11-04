@@ -25,6 +25,34 @@
             <div class="info">
                 <h1> 1. Test Your Tolerance Parameters </h1>
                 <ul>
-                    <li><strong> Target Output (L): </strong> 7.00 </li>
-                    <li><strong> Target Input (c)): </str
-            
+                    <li><strong> Target Output (L): </strong> 7.00 </li><br>
+                    <li><strong> Target Input (c): </strong> 2.00 </li><br>
+                    <li><strong> Output Tolerance (Epsilon - &epsilon;): </strong> Set your allowable error margin. </li><br>
+                    <li><strong> Required Input Precision (Delta - &delta;): </strong> Automatically calculated based on your tolerance (&delta; = &epsilon;/2). </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1> 2. Real-World CNC / 3D Printing Simulation </h1> 
+                <p><strong> Scenario: </strong> You are machining or 3D printing a part to a target length of 7.00mm (L). </p>
+                <ul>
+                    <li><strong> Quality Control Standard (&epsilon;): </strong> The strict error window allowed for the final part. </li><br>
+                    <li><strong> Machine Control (&delta;): </strong> How tightly you must control your input tool position (x) to guarantee every part passes quality checks. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1> 3. Real-Time Verification </h1>
+                <ul>
+                    <li><strong> Test Machine Input (x): </strong> Adjust the input slider to test different values. </li><br>
+                    <li><strong> Calculated Output f(x): </strong> See what physical output the function produces. </li><br>
+                    <li><strong> Part Quality Status: </strong> Instantly see whether your part falls inside the PASS (Inside Quality Window) or FAIL (Outside Quality Window) status. </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+
+                                 
