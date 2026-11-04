@@ -2,9 +2,44 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Delta-Epsilon </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Delta-Epsilon | Home </title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <header>
+                <nav>
+                    <a href="index.html" class="active"> What is Delta-Epsilon </a>
+                    <a href="example.html"> Real-World Example </a>
+                    <a href="form.html"> Interactive Demonstration Form </a>
+                </nav>
+        </header>
+
+        <section class="pagetop"></section>  
+            <div class="container">
+                <div class="info">
+                    <h1> Demystifying Delta-Epsilon Limits </h1>
+                    <p> Welcome to the foundational core of calculus. To anyone seeing it for the first time, the Delta-Epsilon definition of a limit looks like an intimidating string of Greek letters and absolute value bars. However, once you break down the logic, it is simply a precise way of proving how function values behave as they get infinitely close to a target point. </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="info">
+                    <h1> 1. The Formal Mathematical Definition </h1>
+                    <p> The formal definition of a limit states: </p>
+                    <center><p> lim <sub> x&rarr;c </sub> f(x) = L if for every &epsilon; > 0, there exists a &delta; > 0 such that: <br> 0 < | x - c | < &delta; &rarr; | f(x) - L | < &epsilon; </p></center>
+                </div>
+            </div>
+            <div class="container">
+                <div class="info">
+                    <h1> 2. Translating the Symbols into Plain English </h1>
+                    <p> Instead of getting lost in the formal notation, think of Delta-Epsilon like trying to hit a target with strict rules: </p>
+                    <ul>
+                        <li> The Challenge (&epsilon; - Epsilon): Imagine someone sets an acceptable error wiggle room (&epsilon;) around your target output value. They are asking: "Can you guarantee that the final result stays within this tight margin?" </li><br>
+                        <li> The Response (&delta; - Delta): Your task is to figure out how strictly you have to control your starting input (&delta;). If keeping your input tight enough guarantees that your result stays inside the required &epsilon; error window, the limit is proven. </li>
+                    </ul>
+                    <p> Pretty much, if you want your final result to be within your tiny error tolerance (&epsilon;), you just have to make sure your starting step is controlled closely enough (&delta;). </p>
+                </div>
+            </div>
     </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Delta-Epsilon | Example </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"> What is Delta-Epsilon </a>
+                <a href="example.html" class="active"> Real-World Example </a>
+                <a href="form.html"> Interactive Demonstration Form </a>
+            </nav>
+        </header>
+        <section class="pagetop"> </section>
+        <div class="container">
+            <div class="info">
+                <h1> Real-World Engineering: Tolerances and Delta-Epsilon </h1>
+                <p> When engineers manufacture a precision part, like a tight-fitting mechanical gear, a custom 3D-printed component, or a CNC-machined bracket, nothing is ever infinitely perfect. There is always a tiny allowable margin of error. <br> Surprisingly, this real-world manufacturing problem is the exact same concept behind Delta-Epsilon limits. Here is how the math and the machine correlate: </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1> 1. The Manufacturing Correlation </h1>
+                <p> Think of a machine trying to cut or print a part to a specific target dimension: </p>
+                <ul>
+                    <li><strong> The Target Value (L): </strong> This is the exact ideal dimension you want your part to be (for example, a 10.00 mm diameter hole). </li><br>
+                    <li><strong> The Output Error Tolerance (&epsilon; - Epsilon): </strong> This is the strict quality control limit. Your client or engineer tells you, "The part is only usable if it's within &plusmn;0.05 mm of the target." That allowable wiggle room is your &epsilon;. </li><br>
+                    <li><strong> The Input Control Parameter (&delta; - Delta): </strong> To guarantee that the final physical part stays within that &epsilon; error window, how precisely do you need to calibrate your machine's stepper motors, temperature, or filament flow rate? That tight input control zone is your &delta;. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1> 2. How the Limit Proves the Process Works </h1>
+                <p> In calculus, a limit proves that as you push your input closer and closer to your target, the output locks into place. <br> Manufacturing something works the exact same way: </p>
+                <ol>
+                    <li><strong> The Challenge (&epsilon;): </strong> Someone hands you a strict tolerance window (&epsilon;). </li><br>
+                    <li><strong> The Adjustment (&delta;): </strong> You tighten your machine's calibration (&delta;) to restrict any slop or error. </li><br>
+                    <li><strong> The Proof: </strong> If keeping your machine inputs inside &delta; guarantees that every single printed part falls within the quality control tolerance &epsilon;, then your manufacturing process (your "limit") is mathematically sound and reliable. </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
