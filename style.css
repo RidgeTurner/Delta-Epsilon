@@ -58,8 +58,43 @@ h1 {
     color: #f4f6f8;
 }
 
-p, ul, ol {
+p, ul, ol, label {
     color: #f4f6f8;
     font-size: 18px;
 }
 
+.math-section {
+    background-color: #2f025f;
+    padding: 32px;
+    border-radius: 15px;
+    margin-top: 24px;
+}
+
+.epsilon-input {
+    margin-bottom: 20px;
+}
+
+.math-section label {
+    display: block;
+    color: #f4f6f8;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.math-section input[type="number"], .math-section input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #121212;
+    background-color: #121212;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.results {
+    background-color: #121212;
+    padding: 16px;
+    border-radius: 10px;
+}

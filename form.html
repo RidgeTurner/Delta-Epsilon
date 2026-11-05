@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Delta-Epsilon | Form </title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -45,11 +46,28 @@
         <div class="container">
             <div class="info">
                 <h1> 3. Real-Time Verification </h1>
-                <ul>
-                    <li><strong> Test Machine Input (x): </strong> Adjust the input slider to test different values. </li><br>
-                    <li><strong> Calculated Output f(x): </strong> See what physical output the function produces. </li><br>
-                    <li><strong> Part Quality Status: </strong> Instantly see whether your part falls inside the PASS (Inside Quality Window) or FAIL (Outside Quality Window) status. </li>
-                </ul>
+                <p> Use the controls below to test your tolerance and machine inputs: </p>
+                <div class="math-section">
+                    <div class="epsilon-input">
+                        <label for="epsilon"> Set Output Tolerance (&epsilon;): </label>
+                        <input type="number" id="epsilon" value="0.10" step="0.01" min="0.01">
+                    </div>
+
+                    <div class="results">
+                        <p> Required Input Precision (&delta;): <strong style="color: #00E5FF;"> 0.0500 </strong></p>
+                        <p><small> Since f(x) = 2x + 3, keeping |x - 2| < &delta; guarantees |f(x) - 7| < &epsilon; when &delta; = &epsilon; / 2.</small></p>
+                    </div>
+
+                    <div class="epsilon-input">
+                        <label for="xValue"> Test Machine Input (x): <span id="display" style="color: #00E5FF;"> 2.000 </span></label>
+                        <input type="range" id="xValue" min="1.50" max="2.50" step="0.005" value="2.00">
+                    </div>
+
+                    <div class="results">
+                        <p> Calculated Output f(x): <strong id="fxResult" style="color: #00E5FF;"> 7.000 </strong></p>
+                        <p> Part Quality Status: <span id="indicator" class="status-pass"> PASS (Inside Quality Window) </span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
