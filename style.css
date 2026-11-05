@@ -98,3 +98,13 @@ p, ul, ol, label {
     padding: 16px;
     border-radius: 10px;
 }
+
+.status-pass {
+    color: #4CBB17;
+    font-weight: bold;
+}
+
+.status-fail {
+    color: #ff0000;
+    font-weight: bold;
+}
